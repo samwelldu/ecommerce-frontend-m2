@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CDN Externos Inicio -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- CDN Externos Fin -->
 
@@ -15,11 +15,76 @@
 
     <title>e-Commerce</title>
 </head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="header-tan py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="title-header-tan text-left">Venta y distribución de Gift de Anime</h1>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<!-- Etiquetas Script CDN inicio -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<!-- Etiquetas Script CDN Fin -->
-<body>
-    
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">GIFTNIME</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuTan"><i class="bi bi-three-dots-vertical"></i></button>
+
+            <div class="collapse navbar-collapse" id="menuTan">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="btnCarrito shadow">
+        <button id="btnCart" class="btn btnTan"><i class="bi bi-bag-dash-fill fs-2"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </div>
+
+    <aside id="sidebarCart" class="sidebar-cart shadow p-4 hiddenCarrito">
+        <h3 class="title-cart-tan">Productos del carrito</h3>
+        <hr>
+    </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Etiquetas Script CDN inicio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Etiquetas Script CDN Fin -->
+
+    <!-- Etiquetas Script Proyecto inicio -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carritoSidebar.js"></script>
+    <script src="./assets/js/addCarrito.js"></script>
+    <!-- Etiquetas Script Proyecto Fin -->
 </body>
 </html>

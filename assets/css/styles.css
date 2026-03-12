@@ -1,0 +1,51 @@
+.header-tan {
+    background-color: #333;
+}
+
+.title-header-tan {
+    color: rgb(235, 134, 19);
+    font-size: 15px;
+}
+
+.btnCarrito {
+    background-color: #333;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.btnTan {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnTan i {
+    color: #fff;
+    font-size: 25px !important;
+    line-height: 1;
+}
+
+.sidebar-cart {
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    width: 73%;
+    transition: all .2s ease;
+}
+
+.hiddenCarrito {
+    margin-left: -77%;
+    transition: all .2s ease;
+}
+
