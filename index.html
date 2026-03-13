@@ -16,39 +16,40 @@
     <title>e-Commerce</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header class="header-tan py-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1 class="title-header-tan text-left">Venta y distribución de Gift de Anime</h1>
+    <section id="headerSection" class="fixed-top">
+        <header class="header-tan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1 class="title-header-tan text-left">Venta y distribución de Gift de Anime</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <nav class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container">
-            <a href="./index.html" class="navbar-brand">GIFTNIME</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuTan"><i class="bi bi-three-dots-vertical"></i></button>
+        <hr>
 
-            <div class="collapse navbar-collapse" id="menuTan">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Productos</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">GIFTNIME</a>
+                <button class="navbar-toggler btn-menu-tan" data-bs-toggle="collapse" data-bs-target="#menuTan"><i class="bi bi-three-dots-vertical"></i></button>
+
+                <div class="collapse navbar-collapse" id="menuTan">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="" class="nav-link active">Inicio</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Productos</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </section>
 
     <div class="btnCarrito shadow">
         <button id="btnCart" class="btn btnTan"><i class="bi bi-bag-dash-fill fs-2"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                0
-                <span class="visually-hidden">unread messages</span>
-            </span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0<span class="visually-hidden">unread messages</span></span>
         </button>
     </div>
 
@@ -57,9 +58,71 @@
         <hr>
     </aside>
 
+    <section id="heroTan" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box-content-tan py-5">
+                        <div class="contenedor-etiqueta">
+                            <h2 class="etiqueta-tan mt-5">GIFT ANIMADOS</h3>
+                        </div>
+                        <h3 class="title-tan">Diviertete con Gift de famosos anime</h2>
+                        <p class="text-hero-tan">Encuentra los mejores gift animados de tus series favoritas y comparte con tus amigos.</p>
+                        <button class="btn btn-hero-tan my-4">CONTÁCTANOS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <secttion id="productsTan">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card cardTan m-2 shadow">
+                        <img src="./assets/img/naruto-shippuden.webp" alt="Portada de Naruto Shippuden" class="card-img-top img-card-tan">
+                        <div class="card-body">
+                            <h4 class="card-title title-card-tan">Naruto Shippuden</h4>
+                            <div class="card-text text-card-tan">Gift's animados de Naruto Shippuden y mucho más...</div>
+                            <button class="btn btn-tan" id="addNaruto">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card cardTan m-2 shadow">
+                        <img src="./assets/img/jujutsu-kaisen.webp" alt="Portada de Jujutsu Kaisen" class="card-img-top img-card-tan">
+                        <div class="card-body">
+                            <h4 class="card-title title-card-tan">Jujutsu Kaisen</h4>
+                            <div class="card-text text-card-tan">Gift's animados de Jujutsu Kaisen y mucho más...</div>
+                            <button class="btn btn-tan" id="addJujutsu">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card cardTan m-2 shadow">
+                        <img src="./assets/img/TenSura.webp" alt="Portada de Tensei Shitara Slime Datta Ken" class="card-img-top img-card-tan">
+                        <div class="card-body">
+                            <h4 class="card-title title-card-tan">Tensei Shitara Slime Datta Ken</h4>
+                            <div class="card-text text-card-tan">Gift's animados de Tensei Shitara Slime y mucho más...</div>
+                            <button class="btn btn-tan" id="addTensura">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card cardTan m-2 shadow">
+                        <img src="./assets/img/kimetsu.webp" alt="Portada de Kimetsu no Yaiba" class="card-img-top img-card-tan">
+                        <div class="card-body">
+                            <h4 class="card-title title-card-tan">Kimetsu no Yaiba</h4>
+                            <div class="card-text text-card-tan">Gift's animados de Kimetsu no Yaiba y mucho más...</div>
+                            <button class="btn btn-tan" id="addKimetsu">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secttion>
 
-
+    <footer></footer>
 
 
 
