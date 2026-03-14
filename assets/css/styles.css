@@ -73,6 +73,20 @@ nav .nav-link {
     line-height: 1;
 }
 
+.btn-clear-carrito {
+    background-color: rgba(238, 0, 71);
+    position: fixed;
+    bottom: 40px;
+    right: 120px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    z-index: 1000;
+}
+
 .sidebar-cart {
     position: fixed;
     background-color: #131313;
@@ -86,9 +100,52 @@ nav .nav-link {
     color: rgba(238, 0, 71);
 }
 
-.body-cart {
-    padding: 100px 0;
+.cardCartTan {
+    background-color: #131313;
+    border: none;
+    border-radius: 0;
 }
+
+.card-title {
+    color: #727272;
+    font-size: 18px;
+}
+
+.text-cart {
+    color: #fff;
+    font-size: 15px;
+}
+
+.text-cart span {
+    color: rgba(238, 0, 71);
+}
+
+.containerBtn {
+    margin-bottom: 10px;
+}
+
+.btnRestar {
+    width: 37px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSumar {
+    width: 37px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnRemove {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+}
+
+.btnRemove span {
+    color: rgba(238, 0, 71);
+}
+
 
 .hiddenCarrito {
     margin-left: -77%;
@@ -145,7 +202,7 @@ nav .nav-link {
 
 #productsTan {
     background-color: transparent;
-    margin-top: -70px;
+    margin-top: -1000px !important;
     z-index: 995;
 }
 
