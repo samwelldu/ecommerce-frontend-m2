@@ -49,13 +49,18 @@
 
     <div class="btnCarrito shadow">
         <button id="btnCart" class="btn btnTan"><i class="bi bi-bag-dash-fill fs-2"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0<span class="visually-hidden">unread messages</span></span>
+            <span id="contadorCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0<span class="visually-hidden">unread messages</span></span>
         </button>
     </div>
 
-    <aside id="sidebarCart" class="sidebar-cart shadow p-4 hiddenCarrito">
+    <aside id="sidebarCart" class="sidebar-cart shadow p-4">
         <h3 class="title-cart-tan">Productos del carrito</h3>
         <hr>
+        <div class="body-cart">
+            <p class="text-sidebar-cart">Aquí irá el contenido de los productos que se añaden al carrito y su cantidad</p>
+        </div>
+        <hr>
+        <button id="limpiarCarrito" class="btn btn-primary">Limpiar Carrito</button>
     </aside>
 
     <section id="heroTan" class="py-5">

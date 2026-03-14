@@ -82,6 +82,14 @@ nav .nav-link {
     z-index: 1000;
 }
 
+.title-cart-tan {
+    color: rgba(238, 0, 71);
+}
+
+.body-cart {
+    padding: 100px 0;
+}
+
 .hiddenCarrito {
     margin-left: -77%;
     transition: all .2s ease;
