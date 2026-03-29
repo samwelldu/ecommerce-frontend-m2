@@ -10,70 +10,47 @@ const botonLimpiar = document.querySelector('#limpiarCarrito');
 
 // Aquí declaro el contador visual del carrito, al badge del HTML
 const contadorVisual = document.querySelector('#contadorCarrito');
-const contadorVisualNaruto = document.querySelector('#cantidadCarritoNaruto');
-const contadorVisualJujutsu = document.querySelector('#cantidadCarritoJujutsu');
-const contadorVisualTensura = document.querySelector('#cantidadCarritoTensura');
-const contadorVisualKimetsu = document.querySelector('#cantidadCarritoKimetsu');
 
-// Aquí declaramos el contador general y el contador de cada producto
-let carritoCount = Number(localStorage.getItem('carrito-contador')) || 0;
+// Aquí declaramos el contador del carrito
+let carritoCount = 0;
 
 // Aquí manifiesto que el span/texto del contador visual debe mostrar la variable del contador del carrito, para que se vaya actualizando
 contadorVisual.innerText = carritoCount;
 
-
-// Botón de añadir al carrito Naruto
 anadirNaruto.addEventListener('click', () => {
-    carritoCount++;
+    carritoCount++; // Aumentamos 1 la cantidad del carrito.
 
-    localStorage.setItem('carrito-contador', carritoCount);
-
-    console.log('Carrito total: ' + carritoCount);
-    contadorVisual.innerText = carritoCount;
+    console.log('Carrito total: ' + carritoCount); // Mostramos por consola la actualización
+    contadorVisual.innerText = carritoCount; // Actualizamos el dato visible en el front.
 });
 
-// Botón de añadir al carrito Jujutsu Kaisen
 anadirJujutsu.addEventListener('click', () => {
     carritoCount++;
 
-    localStorage.setItem('carrito-contador', carritoCount);
-
     console.log('Carrito total: ' + carritoCount);
     contadorVisual.innerText = carritoCount;
 });
 
-// Botón de añadir al carrito Tensura
 anadirTensura.addEventListener('click', () => {
     carritoCount++;
 
-    localStorage.setItem('carrito-contador', carritoCount);
-
     console.log('Carrito total: ' + carritoCount);
     contadorVisual.innerText = carritoCount;
 });
 
-// Botón de añadir al carrito Kimetsu no Yaiba
 anadirKimetsu.addEventListener('click', () => {
     carritoCount++;
 
-    localStorage.setItem('carrito-contador', carritoCount);
-
     console.log('Carrito total: ' + carritoCount);
     contadorVisual.innerText = carritoCount;
 });
 
 
-// Función flecha para el click de Limpiar el localStorage (carrito)
 botonLimpiar.addEventListener('click', () => {
-    localStorage.clear();
 
-    //location.reload(); Estaba usando esta, pero no se ve pro
+    carritoCount = 0; // Volvemos a darle un valor 0 al carrito
 
-    //Reinicio los datos, para que no debamos actualizar la página.
-    carritoCount = 0;
+    contadorVisual.innerText = carritoCount; // Actualizamos con el nuevo valor en 0 en el front.
 
-    contadorVisual.innerText = carritoCount;
-
-    console.log('Has limpiado el localStorage de este sitio correctamente');
+    console.log('Carrito limpio'); // Mostramos por consola la actualización del localStorage
 });
-

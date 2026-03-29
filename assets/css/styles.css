@@ -7,18 +7,24 @@ h1, h2, p {
 }
 
 #headerSection {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 20px;
-    color: white;
-    z-index: 998;
+    background-color: #121212;
+    padding-top: 20px;
+}
+
+.title-header-tan {
+    color: rgba(238, 0, 71);
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .navbar-brand {
     color: #fff;
     font-weight: bold;
+}
+
+.navbar-brand img {
+    width: 60px;
 }
 
 .btn-menu-tan {
@@ -34,14 +40,6 @@ nav .nav-link {
 
 .active {
     color: rgba(238, 0, 71) !important;
-}
-
-.title-header-tan {
-    color: rgba(238, 0, 71);
-    font-size: 15px;
-    text-align: center;
-    font-weight: 700;
-    text-decoration: underline;
 }
 
 .btnCarrito {
@@ -202,7 +200,7 @@ nav .nav-link {
 
 #productsTan {
     background-color: transparent;
-    margin-top: -1000px !important;
+    margin-top: -140px;
     z-index: 995;
 }
 
@@ -256,5 +254,65 @@ nav .nav-link {
 }
 
 .btn-tan:focus {
-    background-color: rgba(238, 0, 71);;
+    background-color: rgba(238, 0, 71);
+}
+
+#about-us {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box-us-tan {
+    background-color: #bebebe !important;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#contacto-tan {
+    margin-top: 320px;
+    margin-bottom: 120px;
+}
+
+.card-box-tan {
+    margin-top: 70px;
+}
+
+.text-tan-ecomm {
+    color: #9e9d9d;
+}
+
+.box-gift-tan img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.title-card-contacto {
+    color: rgba(238, 0, 71);
+}
+
+.card-box-tan p i {
+    color: rgba(238, 0, 71);
+}
+
+.btn-hero-tan a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.custom-title {
+    color: rgba(238, 0, 71, 1) !important;
+}
+
+.custom-link {
+    color: rgba(238, 0, 71, 0.75);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.custom-link:hover {
+    color: rgba(238, 0, 71, 1);
+}
+
+.custom-icon {
+    color: rgba(238, 0, 71, 1);
 }
